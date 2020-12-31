@@ -6,7 +6,7 @@
 	<title>Tahmid Imran</title>
 	<meta name="description" content="Tahmid">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<link rel="shortcut icon" type="image/x-icon" href="https://via.placeholder.com/32x32">
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon-32x32.png">
 
 	<!-- STYLESHEETS -->
 	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="all">
@@ -106,12 +106,12 @@
 
 					<!-- social icons -->
 					<ul class="social-icons light list-inline mb-0 mt-4">
-						<li class="list-inline-item"><a href="https://github.com/Tahmid2000" target="_blank"><i
-									class="fab fa-github"></i></a></li>
-						<li class="list-inline-item"><a href="https://www.linkedin.com/in/tahmidimran/"
-								target="_blank"><i class="fab fa-linkedin"></i></a></li>
-						<li class="list-inline-item"><a href="https://blogsforall.herokuapp.com" target="_blank"><i
-									class="fas fa-book"></i></a></li>
+						<li class="list-inline-item"><a href="https://github.com/Tahmid2000" target="_blank"
+								title="GitHub"><i class="fab fa-github"></i></a></li>
+						<li class="list-inline-item"><a href="https://www.linkedin.com/in/tahmidimran/" target="_blank"
+								title="Linkedin"><i class="fab fa-linkedin"></i></a></li>
+						<li class="list-inline-item"><a href="https://blogsforall.herokuapp.com" target="_blank"
+								title="Blog"><i class="fas fa-book"></i></a></li>
 					</ul>
 
 					<!-- buttons -->
@@ -588,7 +588,6 @@
 							</div>
 						</a>
 						<div id="small-dialog1" class="white-popup zoom-anim-dialog mfp-hide">
-							<img src="https://via.placeholder.com/590x280" alt="Title" />
 							<h2>Subsort</h2>
 							<p>July 2020</p>
 							<p><strong>Technologies</strong>: Laravel, MySQL, HTML/CSS, Bootstrap 4, Javascript,
@@ -605,16 +604,21 @@
 								initial payment date and the frequency (monthly, yearly, quarterly, etc.) of the
 								payment. The algorithm
 								checks if the current upcoming date already occurred and if so, the date gets updated
-								accordingly. The
-								statistics page gives users a detailed overview, using charts and graphs, of how much
-								they are spending on
-								their services annually/monthly and how much they are spending on different types of
-								services (personal,
-								work, entertainment, etc.). The graph for the monthly payment was difficult to figure
-								out at first because I
-								had to figure out how to include payments that started in the middle of the current year
-								in only the months
-								after the initial date, but eventually, I got it. The last view of the application shows
+								accordingly. </p>
+							<img src="images/subsort_main.png" alt="" />
+							</p>The
+							statistics page gives users a detailed overview, using charts and graphs, of how much
+							they are spending on
+							their services annually/monthly and how much they are spending on different types of
+							services (personal,
+							work, entertainment, etc.). The graph for the monthly payment was difficult to figure
+							out at first because I
+							had to figure out how to include payments that started in the middle of the current year
+							in only the months
+							after the initial date, but eventually, I got it. </p>
+							<img src="images/subsort_stats.png" alt="" />
+							<div class="spacer" data-height="10"></div>
+							<p>The last view of the application shows
 								a calendar that
 								displays all upcoming payments for the next five years. Finally, I integrated a
 								notification system that
@@ -622,12 +626,18 @@
 								created two CRON jobs
 								in cPanel that run daily to check if any emails need to be sent and to update any past
 								upcoming payment
-								dates. I used the Laravel MVC framework for the backend of this website, a MySQL
+								dates.</p>
+							<img src="images/subsort_calendar.png" alt="" />
+							<div class="spacer" data-height="10"></div>
+							<p>I used the Laravel MVC framework for the backend of this website, a MySQL
 								database, a front end with
 								plain HTML/CSS and Bootstrap 4, Javascript for the graphs/charts and calendar, and some
 								Ajax for form
 								submissions.</p>
-							<a href="https://subsort.co" target="_blank" class="btn btn-default">Visit Subsort</a>
+							<div class="float-right">
+								<a href="https://subsort.co" target="_blank" class="btn btn-default">Visit Subsort</a>
+							</div>
+							<div class="spacer" data-height="1"></div>
 						</div>
 					</div>
 
@@ -643,12 +653,12 @@
 								<div class="thumb">
 									<img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8YmxvZ3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
 										alt="Blogs For All" />
-
+									<div class="mask"></div>
 								</div>
 							</div>
 						</a>
 						<div id="small-dialog2" class="white-popup zoom-anim-dialog mfp-hide">
-							<img src="https://via.placeholder.com/590x280" alt="Title" />
+							<img src="images/bfa_homepage.png" alt="" />
 							<h2>Blogs For All</h2>
 							<p>July 2020</p>
 							<p><strong>Technologies</strong>: Django, PostgreSQL, HTML/CSS, Bootstrap 4, Javascript,
@@ -663,7 +673,18 @@
 								links. Also, users
 								receive database notifications if another user interacts with their blogs or profile
 								(liking/commenting on a
-								blog or a new follower). Making the reply system to the comments was difficult because a
+								blog or a new follower).</p>
+							<img src="images/bfa_post.png" alt="" />
+							<div class="spacer" data-height="20"></div>
+							<img src="images/bfa_comment.png" alt="" />
+							<div class="spacer" data-height="20"></div>
+							<img src="images/bfa_new.png" alt="" />
+							<div class="spacer" data-height="20"></div>
+							<img src="images/bfa_profile.png" alt="" />
+							<div class="spacer" data-height="20"></div>
+							<img src="images/bfa_search.png" alt="" />
+							<div class="spacer" data-height="10"></div>
+							<p>Making the reply system to the comments was difficult because a
 								comment can have
 								many nested replies, but it’s impossible to make a model for every nested comment.
 								However, I was able to get
@@ -671,7 +692,8 @@
 								didn’t know how to
 								handle the follower/following system, but I solved this problem by making an
 								intermediary model that has 2
-								one to many relationships, the follower and the followee. I built the backend for this
+								one to many relationships, the follower and the followee.</p>
+							<p>I built the backend for this
 								website using the
 								Django MVC framework and a PostgreSQL database and the frontend using a Bootstrap 4
 								template with plain
@@ -686,8 +708,11 @@
 								long periods of time, I used AWS S3 buckets to handle static files (images and
 								CSS/Javascript files) and
 								media files (user’s profile picture and blog images).</p>
-							<a href="https://blogsforall.herokuapp.com" target="_blank" class="btn btn-default">Visit
-								Blogs For All</a>
+							<div class="float-right">
+								<a href="https://blogsforall.herokuapp.com" target="_blank"
+									class="btn btn-default">Visit
+									Blogs For All</a></div>
+							<div class="spacer" data-height="1"></div>
 						</div>
 					</div>
 
@@ -708,7 +733,7 @@
 							</div>
 						</a>
 						<div id="small-dialog3" class="white-popup zoom-anim-dialog mfp-hide">
-							<img src="https://via.placeholder.com/590x280" alt="Title" />
+							<img src="images/timerss.png" alt="" />
 							<h2>Timer-Stopwatch App</h2>
 							<p>May 2020</p>
 							<p><strong>Technologies</strong>: Python, Tkinter
@@ -739,7 +764,6 @@
 							</div>
 						</a>
 						<div id="small-dialog4" class="white-popup zoom-anim-dialog mfp-hide">
-							<img src="https://via.placeholder.com/590x280" alt="Title" />
 							<h2>Flight Path Calculation</h2>
 							<p>April 2020</p>
 							<p><strong>Technologies</strong>: Java, Data Structuresm Object Orineted Programming
@@ -779,6 +803,13 @@
 								possible paths between the requested source and destination. I then order these paths
 								based on cost or time
 								using a Tree Set and output the first three paths into a text file.</p>
+							<img src="images/fp_requested.png" alt="" />
+							<img src="images/fp_flights.png" alt="" />
+							<img src="images/fp_output.png" alt="" />
+							<p>The first screenshot shows the requested departure and arrival locations and if the
+								paths should be ordered based on time(T) or cost(C). The second image shows all the
+								flights avaialble and the distance/cost of each flight. The last image shows the three
+								best possible paths based on the requested text file. </p>
 						</div>
 					</div>
 
@@ -800,19 +831,26 @@
 							</div>
 						</a>
 						<div id="small-dialog5" class="white-popup zoom-anim-dialog mfp-hide">
-							<img src="https://via.placeholder.com/590x280" alt="Title" />
 							<h2>SoundGarden</h2>
 							<p>October 2020</p>
 							<p><strong>Technologies</strong>: ReactJS, Bootstrap, Vercel</p>
 							<p>In this web application, users can search for and listen to millions of songs. Every time
 								a user inputs a song
 								title, artist, or album title, they see a list of songs, which are fetched from the
-								Deezer API. When a user
+								Deezer API.</p>
+							<img src="images/sg_search.png" alt="" />
+							<div class="spacer" data-height="10"></div>
+							<p>When a user
 								clicks on a specific song, they get redirected to the specific song’s page using React
 								Router. This page
 								displays the song name, the artist, the music video, the song’s lyrics, other songs on
 								the same album, and
-								other works by the same artist. The music video is from the YouTube API, the song's
+								other works by the same artist</p>
+							<img src="https://via.placeholder.com/590x280" alt="" />
+							<div class="spacer" data-height="20"></div>
+							<img src="images/sg_bottom.png" alt="" />
+							<div class="spacer" data-height="10"></div>
+							<p>The music video is from the YouTube API, the song's
 								lyrics are from the
 								Genius API through a JavaScript package, and similar songs are fetched from the Deezer
 								API. With these
@@ -821,8 +859,11 @@
 								they hear, they can go through other songs on the same album or by the same artist. I
 								made this application
 								using ReactJS, utilized Axios to fetch from the APIs, and deployed with Vercel.</p>
-							<a href="https://music-library-six.vercel.app" target="_blank" class="btn btn-default">Visit
-								SoundGarden</a>
+							<div class="float-right">
+								<a href="https://music-library-six.vercel.app" target="_blank"
+									class="btn btn-default">Visit
+									SoundGarden</a></div>
+							<div class="spacer" data-height="1"></div>
 						</div>
 					</div>
 
@@ -836,14 +877,13 @@
 									<span class="more-button"><i class="icon-options"></i></span>
 								</div>
 								<div class="thumb">
-									<img src="https://chicagoinnovation.com/wp-content/uploads/2017/05/New-GITG-logo-color.png"
-										alt="Website for Girls In The Game" />
+									<img src="images/gig.png" alt="Website for Girls In The Game" />
 									<div class="mask"></div>
 								</div>
 							</div>
 						</a>
 						<div id="small-dialog6" class="white-popup zoom-anim-dialog mfp-hide">
-							<img src="https://via.placeholder.com/590x280" alt="Title" />
+							<img src="https://miro.medium.com/max/800/1*NK2hmuq_GaccMB-mA_6pyw.jpeg" alt="" />
 							<h2>Website for Girls In The Game</h2>
 							<p>September 2020</p>
 							<p><strong>Technologies</strong>: NodeJS, ExpressJS, MongoDB, Handlesbars</p>
@@ -891,7 +931,7 @@
 			<div class="container">
 
 				<!-- section title -->
-				<h2 class="section-title wow fadeInUp">Get In Touch</h2>
+				<h2 class="section-title wow fadeInUp">Contact Me</h2>
 
 				<div class="spacer" data-height="60"></div>
 
@@ -900,10 +940,20 @@
 					<div class="col-md-4">
 						<!-- contact info -->
 						<div class="contact-info">
-							<h3 class="wow fadeInUp">Let's talk about everything!</h3>
-							<p class="wow fadeInUp">Don't like forms? Send me an <a
-									href="mailto:tahmidimran1@gmail.com">email</a>. 👋</p>
+							<h3 class="wow fadeInUp">Let's talk!</h3>
+							<p class="wow fadeInUp">Fill out this form or send me an email at <a
+									href="mailto:tahmidimran1@gmail.com">tahmidimran1@gmail.com.</a> 👋</p>
+							<h3 class="wow fadeInUp">Check out my socials!</h3>
+							<ul class="social-icons light list-inline mb-0 mt-4">
+								<li class="list-inline-item"><a href="https://github.com/Tahmid2000" target="_blank"
+										title="GitHub"><i class="fab fa-github"></i></a></li>
+								<li class="list-inline-item"><a href="https://www.linkedin.com/in/tahmidimran/"
+										target="_blank" title="Linkedin"><i class="fab fa-linkedin"></i></a></li>
+								<li class="list-inline-item"><a href="https://blogsforall.herokuapp.com" target="_blank"
+										title="Blog"><i class="fas fa-book"></i></a></li>
+							</ul>
 						</div>
+
 					</div>
 
 					<div class="col-md-8">
@@ -951,9 +1001,10 @@
 									</div>
 								</div>
 							</div>
-
-							<button type="submit" name="submit" id="submit" value="Submit" class="btn btn-default">Send
-								Message</button><!-- Send Button -->
+							<div class="float-right">
+								<button type="submit" name="submit" id="submit" value="Submit"
+									class="btn btn-default">Send
+									Message</button></div><!-- Send Button -->
 
 						</form>
 						<!-- Contact Form end -->
